@@ -22,4 +22,13 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_25_102949) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "land_checker_properties", force: :cascade do |t|
+    t.bigint "council_property_number"
+    t.decimal "longitude", null: false
+    t.decimal "latitude", precision: 18, scale: 15, null: false
+    t.integer "lga_code", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
 end
