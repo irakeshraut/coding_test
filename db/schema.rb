@@ -14,6 +14,17 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_25_102949) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "land_checker_addresses", force: :cascade do |t|
+    t.bigint "feature_id", null: false
+    t.bigint "property_id", null: false
+    t.string "full_address"
+    t.integer "lga_code"
+    t.string "state", null: false
+    t.integer "postcode"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "land_checker_lgas", force: :cascade do |t|
     t.integer "code", null: false
     t.string "name", null: false

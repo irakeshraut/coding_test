@@ -5,5 +5,6 @@ module LandChecker
     validates :lga_code, presence: true
 
     belongs_to :lga, foreign_key: 'lga_code', primary_key: 'code'
+    has_one :address
   end
 end
