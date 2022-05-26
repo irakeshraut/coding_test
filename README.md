@@ -10,16 +10,21 @@ Database: Postgres
 
 # Initial Setup
 
-1. git clone
-2. bundle install
-3. rake db:create
-4. rake db:migrate
-5. rake db:seed
-6. rails server
+1. git clone git@github.com:rautrakesh/coding_test.git
+2. cd coding_test
+3. bundle install
+4. rake db:create
+5. rake db:migrate
+6. rake db:seed
+7. rails server
 
 # Run Rspec
 
 bundle exec rspec
+
+# Seed Data from CSV file
+
+you can find logic to seed data inside `seed.rb` file. You can run `rake db:seed` to import data from csv file to database`
 
 # Viewing Properties Json
 
