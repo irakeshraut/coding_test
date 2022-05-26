@@ -84,6 +84,9 @@ GEM
     io-console (0.5.11)
     irb (1.4.1)
       reline (>= 0.3.0)
+    jbuilder (2.11.5)
+      actionview (>= 5.0.0)
+      activesupport (>= 5.0.0)
     loofah (2.18.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -174,6 +177,7 @@ GEM
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
+    will_paginate (3.3.1)
     zeitwerk (2.5.4)
 
 PLATFORMS
@@ -182,12 +186,14 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   debug
+  jbuilder
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.2, >= 7.0.2.3)
   rspec-rails
   shoulda-matchers (~> 5.0)
   tzinfo-data
+  will_paginate (~> 3.3)
 
 RUBY VERSION
    ruby 2.7.5p203
