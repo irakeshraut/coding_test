@@ -12,6 +12,7 @@ RSpec.describe LandChecker::Property, type: :model do
 
   describe 'associations' do
     it { should belong_to(:lga) }
+    it { should have_one(:address) }
   end
 
   context 'valid Property' do

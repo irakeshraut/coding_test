@@ -16,6 +16,10 @@ RSpec.describe LandChecker::Lga, type: :model do
     end
   end
 
+  describe 'association' do
+    it { should have_many(:properties) }
+  end
+
   context 'valid Lga' do
     it 'will pass validation' do
       expect(lga).to be_valid
