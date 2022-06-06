@@ -4,8 +4,6 @@ module Api
       def index
         @properties = LandChecker::Property.all.includes(:address, :lga)
         @properties = @properties.paginate(page: params[:page], per_page: 30)
-
-        render :index
       end
     end
   end

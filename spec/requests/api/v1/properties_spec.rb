@@ -20,7 +20,7 @@ RSpec.describe "Api::V1::Properties", type: :request do
     end
 
     it 'will have property details in json' do
-      expected_result = { council: "CARDINIA", council_property_number: 23456, full_address: "test, test, vic, 3071", latitude: "-39.1222", lga_code: 311, longitude: "134.3222", postcode: 3071, property_id: 111 }
+      expected_result = { council: "CARDINIA", council_property_number: "23456", full_address: "test, test, vic, 3071", latitude: "-39.1222", lga_code: 311, longitude: "134.3222", postcode: "3071", property_id: 111 }
       expect(@parsed_response.first).to eq(expected_result)
     end
   end
